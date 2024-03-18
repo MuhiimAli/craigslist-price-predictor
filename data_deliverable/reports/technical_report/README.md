@@ -1,8 +1,8 @@
 ## Technical Report
 
-See `data_deliverable/data/sample.json` for sample data (100 rows).
+See [`data_deliverable/data/sample.json`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/blob/main/data_deliverable/data/sample.json) for sample data (100 rows).
 
-See `data_deliverable/data/preprocessed_items.json` for full data.
+See [`data_deliverable/data/preprocessed_items.json`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/blob/main/data_deliverable/data/preprocessed_items.json) for full data.
 
 ### Total Data Points
 
