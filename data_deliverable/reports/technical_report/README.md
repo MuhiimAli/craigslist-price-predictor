@@ -50,17 +50,16 @@ For each listing, our dataset includes the following identifying attributes:
 
 ### Challenges and Next Steps
 
-Challenges
+Some attributes that we found could pose a challenge during our analysis is the uneven distribution of categories and the fact that our data only sampled a very small time window (4 days). This could mean that our dataset would not be fully representative of the price distribution in the long term.
 
-- uneven distribution over different categories
-- very recent samples (only 4 days of items)
+For next steps, depending on the type of analysis that we'll pursue, we may process the item title into SpaCy embedding, image into image embedding, and date, location, and category features into dummy variables. The analyses that we plan to pursue are the following:
 
-Next Steps
+- Hypothesis Testing
 
-- Processing
-  - process title to SpaCy embedding
-  - process image to image embedding
-  - process date, location, category to dummy variables
-- Analyses
-  - Unsupervised clustering to find distinguishing clusters
+  - (TODO: what statistical method) Location and Price
+  - (TODO: what statistical method) Category and Price
+  - (TODO: what statistical method) Mileage and Price
+
+- Machine Learning
+  - Unsupervised clustering to find distinct groups
   - Supervised regression to predict item prices
