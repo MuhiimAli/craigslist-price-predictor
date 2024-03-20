@@ -1,8 +1,14 @@
 # Craigslist Item Price Predictor
 
+### Data Deliverables
+
 Techincal Report: [`data_deliverable/reports/technical_report`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/data_deliverable/reports/technical_report)
 
 Data Spec: [`data_deliverable/reports/data_spec`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/data_deliverable/reports/data_spec)
+
+Full Data: [`data_deliverable/data/preprocessed_items.json`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/blob/main/data_deliverable/data/preprocessed_items.json)
+
+Sample (100 rows): [`data_deliverable/data/sample.json`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/blob/main/data_deliverable/data/sample.json)
 
 ### Environment setup
 
