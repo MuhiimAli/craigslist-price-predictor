@@ -54,12 +54,28 @@ Some attributes that we found could pose a challenge during our analysis is the 
 
 For next steps, depending on the type of analysis that we'll pursue, we may process the item title into SpaCy embedding, image into image embedding, and date, location, and category features into dummy variables. The analyses that we plan to pursue are the following:
 
-- Hypothesis Testing
+#### Hypothesis Testing
 
-  - (TODO: what statistical method) Location and Price
-  - (TODO: what statistical method) Category and Price
-  - (TODO: what statistical method) Mileage and Price
+##### 1. Difference in Mean Price Across Locations
+- **Null Hypothesis (H0):** There is no significant difference in the mean price of items across different locations.  
+- **Alternate Hypothesis (H1):** There is a significant difference in the mean price of items across different locations.  
+- **Statistical Test:** Kruskal-Wallis test
 
-- Machine Learning
+##### 2. Difference in Mean Price Across Categories
+- **Null Hypothesis (H0):** There is no significant difference in the mean price of items across all categories.  
+- **Alternate Hypothesis (H1):** There is a significant difference in the mean price of items across all categories.  
+- **Statistical Test:** Kruskal-Wallis test
+##### 3. Linear Relationship Between Mileage and Price in Vehicle Listings
+- **Null Hypothesis (H0):** There is no linear relationship between the mileage and price in vehicle listings.  
+- **Alternate Hypothesis (H1):** There is a linear relationship between the mileage and price in vehicle listings.  
+- **Statistical Test:** Simple linear regression
+
+##### 4. Price Difference Based on Item Condition
+- **Null Hypothesis (H0):** Items listed with a condition labeled as "like new" or "new" do not have significantly higher prices than those listed as "good."  
+- **Alternate Hypothesis (H1):** Items listed with a condition labeled as "like new" or "new" have significantly higher prices than those listed as "good."  
+- **Statistical Test:** a T-test
+
+
+#### Machine Learning
   - Unsupervised clustering to find distinct groups
   - Supervised regression to predict item prices
