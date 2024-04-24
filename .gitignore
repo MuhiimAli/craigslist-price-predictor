@@ -10,6 +10,8 @@ cs1951a_project_venv
 # C extensions
 *.so
 
+*/item_images.npy
+
 # Distribution / packaging
 .Python
 build/
