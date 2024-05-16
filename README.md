@@ -1,5 +1,17 @@
 # Craigslist Item Price Predictor
 
+### Final Deliverables
+
+Visualizations: [`analysis_deliverable/visualizations`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/analysis_deliverable/visualizations)
+
+Poster: [`final_deliverable/poster.pdf`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/final_deliverable/poster.pdf)
+
+Abstract: [`final_deliverable/abstract.pdf`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/final_deliverable/abstract.pdf)
+
+Socio-historical Context and Impact Report: [`final_deliverable/impact.pdf`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/final_deliverable/impact.pdf)
+
+Presentation: [`final_deliverable/presentation.mp4`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/final_deliverable/presentation.mp4)
+
 ### Data Deliverables
 
 Techincal Report: [`data_deliverable/reports/technical_report`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/data_deliverable/reports/technical_report)
