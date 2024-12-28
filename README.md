@@ -1,5 +1,50 @@
 # Craigslist Item Price Predictor
+## Objective 
+This project uses supervised regression to predict item prices. 
 
+## Dataset
+### Data Collection
+- We webscrape from Providence's Craigslist all-category gallery [https://providence.craigslist.org/]
+- For each item listing, we collect:
+  - Images
+  - Title
+  - Price
+  - Mileage (for vehicle listings)
+  - Post date
+  - Location
+- Dataset size: 3,254 items
+- Temporal coverage: 4 unique days between 3/11 and 3/14
+- Note: Our dataset contains only publicly available information
+
+### Methodology
+#### Feature Engineering
+
+1. Image Features
+   - Preprocessed using pretrained VGG16 Keras model
+   - Applied PCA for dimensionality reduction
+   - Final representation: 210-dimensional feature vectors
+
+2. Text Features
+   - Extracted from item titles
+   - Used spaCy's small text embedding model
+   - Generated compact numerical representations of textual content
+
+3. Statistical Analysis
+   - Applied Kruskal-Wallis test
+   - Purpose: Identify significant differences in mean prices across:
+     - Different categories
+     - Different locations
+
+#### Price Prediction
+- Model: Linear Regression
+- Input features:
+  - Image features
+  - Text embeddings
+  - Categorical variables (location, category)
+  - Numerical attributes (mileage)
+- Objective: Predict item prices using all available attributes
+
+## Deliverables
 ### Final Deliverables
 
 Visualizations: [`analysis_deliverable/visualizations`](https://github.com/csci1951a-spring-2024/final-project-price-predictor/tree/main/analysis_deliverable/visualizations)
@@ -42,3 +87,21 @@ To activate/deactivate environment in the future:
 
 - `source cs1951a_project_venv/bin/activate`
 - `deactivate`
+
+# limitations
+The nature of the data:
+
+
+Second-hand goods prices are inherently subjective
+Individual sellers might price items inconsistently
+Market conditions during the data collection period (March 11-16) might vary
+Local variations in supply and demand
+
+
+Looking at our features:
+
+
+Numeric: mileage, number of images, date
+Categorical: location, category
+Image features: reduced VGG16 representations
+Text features: from titles
