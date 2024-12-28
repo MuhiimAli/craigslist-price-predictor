@@ -1,6 +1,6 @@
 # Craigslist Item Price Predictor
 ## Objective 
-This project uses supervised regression to predict item prices. 
+This project uses supervised regression to predict prices of second-hand items listed on Craigslist. 
 
 ## Dataset
 ### Data Collection
@@ -42,7 +42,22 @@ This project uses supervised regression to predict item prices.
   - Text embeddings
   - Categorical variables (location, category)
   - Numerical attributes (mileage)
-- Objective: Predict item prices using all available attributes
+- Objective: Our goal was to predict item prices using all available attributes.
+
+## Analysis & Results
+
+### Statistical Analysis
+Using the Kruskal-Wallis test, we found statistically significant differences in price distributions across:
+- Different product categories (p < 0.05)
+- Different locations (p < 0.05)
+
+### Price Prediction Models
+
+Our price prediction analysis involved two main modeling approaches. Initially, we implemented a linear regression model using basic item attributes but notably excluded location data. This basic model performed poorly, with a median RMSE of 262.70 and R² of 0.08. We then changed our approach by incorporating location data and switching to a GradientBoostingRegressor to capture non-linear relationships in the data. This improved model showed substantially better performance, achieving a median RMSE of 0.99 and R² of 0.35, explaining 35% of the price variance. 
+
+### Limitations
+To make our price predictions better, we tried many different machine learning models and ways to analyze text and images. However, these new approaches didn't make our predictions any better. This makes sense when you consider how tricky it is to predict prices in second-hand markets. The main challenges come from two things: how subjective pricing can be, and the limited time period of our data. In second-hand markets, sellers often price things very differently based on what they personally think items are worth, and local market conditions can really affect prices too. Plus, our data only covers a short period from March 11-16, so we might be missing important patterns in how prices change over longer periods or different seasons.
+
 
 ## Deliverables
 ### Final Deliverables
@@ -88,20 +103,3 @@ To activate/deactivate environment in the future:
 - `source cs1951a_project_venv/bin/activate`
 - `deactivate`
 
-# limitations
-The nature of the data:
-
-
-Second-hand goods prices are inherently subjective
-Individual sellers might price items inconsistently
-Market conditions during the data collection period (March 11-16) might vary
-Local variations in supply and demand
-
-
-Looking at our features:
-
-
-Numeric: mileage, number of images, date
-Categorical: location, category
-Image features: reduced VGG16 representations
-Text features: from titles
